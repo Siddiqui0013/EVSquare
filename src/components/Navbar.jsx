@@ -37,8 +37,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 w-full border-b-2 border-green-500 z-50 transition-all  duration-300 ${
-        isScrolled ? 'bg-black bg-opacity-70 backdrop-blur-md' : 'bg-black'
+      className={`fixed top-0 w-full border-b-2 md:border-green-500 z-50 transition-all  duration-300 ${
+        isScrolled ? "bg-black bg-opacity-70 backdrop-blur-md" : "bg-black"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,7 +46,7 @@ export default function Navbar() {
           {/* Logo Section */}
           <div className="flex-shrink-0">
             <Link to="/">
-            <img src={logo} alt="logo" className="h-14" />
+              <img src={logo} alt="logo" className="h-14" />
             </Link>
           </div>
 
@@ -59,8 +59,8 @@ export default function Navbar() {
                     to={item.path}
                     className={`text-white hover:text-gray-400 hover:bottom-4 hover:border-b-2 hover:text-lg hover:border-green-500 pb-1 ${
                       location.pathname === item.path
-                        ? 'border-b-2 border-green-500'
-                        : ''
+                        ? "border-b-2 md:border-green-500"
+                        : ""
                     }`}
                   >
                     {item.name}
@@ -97,8 +97,8 @@ export default function Navbar() {
                   onClick={() => setIsMenuOpen(false)}
                   className={`block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gray-400 ${
                     location.pathname === item.path
-                      ? 'border-b-2 border-green-500'
-                      : ''
+                      ? "border-b-2 border-green-500"
+                      : ""
                   }`}
                 >
                   {item.name}
