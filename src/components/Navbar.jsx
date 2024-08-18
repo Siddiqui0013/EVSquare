@@ -30,7 +30,7 @@ export default function Navbar() {
   const menuItems = [
     { name: 'Projects', path: '/projects' },
     { name: 'Services', path: '/services' },
-    { name: 'Blogs', path: '/blogs' },
+    // { name: 'Blogs', path: '/blogs' },
     { name: 'About Us', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];
